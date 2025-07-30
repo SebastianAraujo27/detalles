@@ -1,0 +1,80 @@
+/* main.css */
+
+/* Fuente y reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo degradado y centrado */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ffeafd, #fbe0e6);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Título con latido suave */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.1); }
+}
+
+/* Texto de la fecha objetivo */
+.fecha p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor del contador */
+.cuenta-atras {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Cada bloque de unidad */
+.grupo {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 80px;
+}
+
+/* Número grande */
+.grande {
+  font-size: 2.5rem;
+  color: #e91e63;
+}
+
+/* Etiqueta pequeña */
+.chico {
+  font-size: 0.9rem;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+/* Pie de página informativo */
+p:last-of-type {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
